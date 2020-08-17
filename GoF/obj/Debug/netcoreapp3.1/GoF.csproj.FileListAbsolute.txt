@@ -1,0 +1,13 @@
+C:\Romulo\Source\DesignPatterns\GoF\bin\Debug\netcoreapp3.1\GoF.exe
+C:\Romulo\Source\DesignPatterns\GoF\bin\Debug\netcoreapp3.1\GoF.deps.json
+C:\Romulo\Source\DesignPatterns\GoF\bin\Debug\netcoreapp3.1\GoF.runtimeconfig.json
+C:\Romulo\Source\DesignPatterns\GoF\bin\Debug\netcoreapp3.1\GoF.runtimeconfig.dev.json
+C:\Romulo\Source\DesignPatterns\GoF\bin\Debug\netcoreapp3.1\GoF.dll
+C:\Romulo\Source\DesignPatterns\GoF\bin\Debug\netcoreapp3.1\GoF.pdb
+C:\Romulo\Source\DesignPatterns\GoF\obj\Debug\netcoreapp3.1\GoF.csprojAssemblyReference.cache
+C:\Romulo\Source\DesignPatterns\GoF\obj\Debug\netcoreapp3.1\GoF.AssemblyInfoInputs.cache
+C:\Romulo\Source\DesignPatterns\GoF\obj\Debug\netcoreapp3.1\GoF.AssemblyInfo.cs
+C:\Romulo\Source\DesignPatterns\GoF\obj\Debug\netcoreapp3.1\GoF.csproj.CoreCompileInputs.cache
+C:\Romulo\Source\DesignPatterns\GoF\obj\Debug\netcoreapp3.1\GoF.dll
+C:\Romulo\Source\DesignPatterns\GoF\obj\Debug\netcoreapp3.1\GoF.pdb
+C:\Romulo\Source\DesignPatterns\GoF\obj\Debug\netcoreapp3.1\GoF.genruntimeconfig.cache

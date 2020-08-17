@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Group-01-Creational\C-01-02-FactoryMethod\" />
+    <Folder Include="Group-01-Creational\C-01-03-Singleton\" />
+    <Folder Include="Group-03-Behavioral\" />
+    <Folder Include="Group-02-Structural\" />
+  </ItemGroup>
+
+</Project>
