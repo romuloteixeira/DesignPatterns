@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GoF.Group01Creational.C0101AbstractFactory
 {
-    public class Vehicle
+    public class SmallVehicleRescueFactory
     {
         
     }

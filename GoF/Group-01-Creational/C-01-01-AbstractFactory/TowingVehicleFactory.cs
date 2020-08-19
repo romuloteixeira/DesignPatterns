@@ -1,10 +1,11 @@
-﻿using GoF.Group01Creational.C0101AbstractFactory.Enum;
+﻿using GoF.Group01Creational.C0101AbstractFactory.Entities.Vehicles;
+using GoF.Group01Creational.C0101AbstractFactory.Enum;
 
 namespace GoF.Group01Creational.C0101AbstractFactory
 {
     public abstract class TowingVehicleFactory
     {
         public abstract Winch CreateWinch();
-        public abstract Vehicle CreateVehicle(string model, VehicleSizeEnum vehicleSizeEnum);
+        public abstract VehicleEntity CreateVehicle(string model, VehicleSizeEnum vehicleSizeEnum);
     }
 }

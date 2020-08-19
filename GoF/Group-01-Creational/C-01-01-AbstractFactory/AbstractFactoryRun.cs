@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace GoF.Group01Creational.C0101AbstractFactory
 {
-    public class AbstractFactoryExecution
+    public class AbstractFactoryRun
     {
-        
+        public static void Run()
+        {
+            var rescueVehicles = new List<Vehicle>
+            {
+
+            };
+        }
     }
 }
