@@ -3,9 +3,9 @@ using System;
 
 namespace GoF.Group01Creational.C0101AbstractFactory.Entities.Vehicles
 {
-    public class VehicleEntity : BaseEntity<Guid>
+    public abstract class VehicleEntity : BaseEntity<Guid>
     {
-        public VehicleEntity(Guid id, string model, VehicleSizeEnum vehicleSize)
+        protected VehicleEntity(Guid id, string model, VehicleSizeEnum vehicleSize)
         {
             Id = id;
             Model = model;

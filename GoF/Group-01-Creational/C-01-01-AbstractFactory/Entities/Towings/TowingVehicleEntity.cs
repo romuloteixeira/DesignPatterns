@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoF.Group01Creational.C0101AbstractFactory
+namespace GoF.Group01Creational.C0101AbstractFactory.Entities.Towings
 {
-    public class TowingVehicle
+    public class TowingVehicleEntity
     {
         
     }

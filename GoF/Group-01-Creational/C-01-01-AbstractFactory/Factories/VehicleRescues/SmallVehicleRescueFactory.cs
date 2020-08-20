@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoF.Group01Creational.C0101AbstractFactory
+namespace GoF.Group01Creational.C0101AbstractFactory.Factories.VehicleRescues
 {
-    public class Winch
+    public class SmallVehicleRescueFactory
     {
         
     }

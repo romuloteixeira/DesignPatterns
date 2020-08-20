@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoF.Group01Creational.C0101AbstractFactory
+namespace GoF.Group01Creational.C0101AbstractFactory.Entities.Winchs
 {
-    public class BigVehicleRescueFactory
+    // Concrete Product
+    public class SmallWinchEntity
     {
         
     }
