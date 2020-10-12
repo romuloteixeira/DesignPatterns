@@ -8,81 +8,55 @@ namespace GoF.Group01Creational.C0101AbstractFactory.Factories
 {
     public static class VehicleEntityFactory
     {
-        //private static readonly List<BigVehicleEntity> bigVehicles;
-        //private static readonly List<AverageVehicleEntity> averageVehicles;
-        //private static readonly List<SmallVehicleEntity> smallVehicles;
         private static readonly List<VehicleEntity> vehicles;
 
         static VehicleEntityFactory()
         {
-            //bigVehicles = new List<BigVehicleEntity>();
-            //averageVehicles = new List<AverageVehicleEntity>();
-            //smallVehicles = new List<SmallVehicleEntity>();
             vehicles = new List<VehicleEntity>();
         }
 
-        public static VehicleEntity NewVehicle(string model, VehicleSizeEnum vehicleSize)
+        public static VehicleEntity Create(string model, VehicleSizeEnum vehicleSize)
         {
             var newGuid = Guid.NewGuid();
             switch (vehicleSize)
             {
                 case VehicleSizeEnum.Big:
-                    var bigVehicleEntity = CreateBigVehicle(model, vehicleSize, newGuid);
+                    var bigVehicleEntity = CreateBigVehicle(model, newGuid);
                     return bigVehicleEntity;
                 case VehicleSizeEnum.Average:
-                    var averageVehicleEntity = CreateAverageVehicle(model, vehicleSize, newGuid);
+                    var averageVehicleEntity = CreateAverageVehicle(model, newGuid);
                     return averageVehicleEntity;
                 case VehicleSizeEnum.Small:
-                    var smallVehicleEntity = CreateSmallVehicle(model, vehicleSize, newGuid);
+                    var smallVehicleEntity = CreateSmallVehicle(model, newGuid);
                     return smallVehicleEntity;
                 default:
                     throw new ApplicationException("Porte de veículo desconhecido.");
             }
         }
 
-        private static SmallVehicleEntity CreateSmallVehicle(string model, VehicleSizeEnum vehicleSize, Guid newGuid)
+        private static SmallVehicleEntity CreateSmallVehicle(string model, Guid newGuid)
         {
-            var smallVehicleEntity = new SmallVehicleEntity(newGuid, model, vehicleSize);
-            //smallVehicles.Add(smallVehicleEntity);
+            var smallVehicleEntity = new SmallVehicleEntity(newGuid, model);
             vehicles.Add(smallVehicleEntity);
             return smallVehicleEntity;
         }
 
-        private static AverageVehicleEntity CreateAverageVehicle(string model, VehicleSizeEnum vehicleSize, Guid newGuid)
+        private static AverageVehicleEntity CreateAverageVehicle(string model, Guid newGuid)
         {
-            var averageVehicleEntity = new AverageVehicleEntity(newGuid, model, vehicleSize);
-            //averageVehicles.Add(averageVehicleEntity);
+            var averageVehicleEntity = new AverageVehicleEntity(newGuid, model);
             vehicles.Add(averageVehicleEntity);
             return averageVehicleEntity;
         }
 
-        private static BigVehicleEntity CreateBigVehicle(string model, VehicleSizeEnum vehicleSize, Guid newGuid)
+        private static BigVehicleEntity CreateBigVehicle(string model, Guid newGuid)
         {
-            var bigVehicleEntity = new BigVehicleEntity(newGuid, model, vehicleSize);
-            //bigVehicles.Add(bigVehicleEntity);
+            var bigVehicleEntity = new BigVehicleEntity(newGuid, model);
             vehicles.Add(bigVehicleEntity);
             return bigVehicleEntity;
         }
 
         public static VehicleEntity Get(Guid id)
         {
-            //var bigVehicle = bigVehicles.FirstOrDefault(v => v.Id.Equals(id));
-            //var isBigVehicle = bigVehicle != null;
-            //if (isBigVehicle)
-            //{
-            //    return bigVehicle;
-            //}
-
-            //var averageVehicle = averageVehicles.FirstOrDefault(v => v.Id.Equals(id));
-            //var isAverageVehicle = averageVehicle != null;
-            //if (isAverageVehicle)
-            //{
-            //    return averageVehicle;
-            //}
-
-            //var smallVehicle = smallVehicles.FirstOrDefault(v => v.Id.Equals(id));
-            //return smallVehicle;
-
             var vehicleEntity = vehicles.FirstOrDefault(v => v.Id.Equals(id));
             return vehicleEntity;
         }

@@ -1,17 +1,13 @@
 ﻿using GoF.Group01Creational.C0101AbstractFactory.Entities.Vehicles;
 using GoF.Group01Creational.C0101AbstractFactory.Enum;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GoF.Group01Creational.C0101AbstractFactory.Entities.Winchs
 {
     // Concrete Product
     public class AverageWinchEntity : WinchEntity
     {
-        public AverageWinchEntity(VehicleSizeEnum vehicleSize) : base(vehicleSize)
+        public AverageWinchEntity() : base(VehicleSizeEnum.Average)
         {
         }
 

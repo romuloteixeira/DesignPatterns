@@ -1,11 +1,7 @@
 ﻿using GoF.Group01Creational.C0101AbstractFactory.Entities.Vehicles;
 using GoF.Group01Creational.C0101AbstractFactory.Enum;
 using GoF.Group01Creational.C0101AbstractFactory.Factories;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GoF.Group01Creational.C0101AbstractFactory
 {
@@ -15,12 +11,12 @@ namespace GoF.Group01Creational.C0101AbstractFactory
         {
             var rescuedVehicles = new List<VehicleEntity>
             {
-                VehicleEntityFactory.NewVehicle("Mini", VehicleSizeEnum.Small),
-                VehicleEntityFactory.NewVehicle("Peugeot 308 SW", VehicleSizeEnum.Average),
-                VehicleEntityFactory.NewVehicle("BMW X6", VehicleSizeEnum.Big),
+                VehicleEntityFactory.Create("Mini", VehicleSizeEnum.Small),
+                VehicleEntityFactory.Create("Peugeot 308 SW", VehicleSizeEnum.Average),
+                VehicleEntityFactory.Create("BMW X6", VehicleSizeEnum.Big),
             };
 
-            //rescuedVehicles.ForEach(v => );
+            //rescuedVehicles.ForEach(v => TowingVehicle);
         }
     }
 }

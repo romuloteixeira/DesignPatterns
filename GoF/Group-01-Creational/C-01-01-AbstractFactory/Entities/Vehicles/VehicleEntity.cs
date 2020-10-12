@@ -3,6 +3,7 @@ using System;
 
 namespace GoF.Group01Creational.C0101AbstractFactory.Entities.Vehicles
 {
+    // AbstractProduct
     public abstract class VehicleEntity : BaseEntity<Guid>
     {
         protected VehicleEntity(Guid id, string model, VehicleSizeEnum vehicleSize)

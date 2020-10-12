@@ -4,8 +4,8 @@ using System;
 
 namespace GoF.Group01Creational.C0101AbstractFactory.Entities.Winchs
 {
-    // AbstractProduct   
-    public abstract class WinchEntity : BaseEntity<Guid>
+    // AbstractProduct
+    public abstract class WinchEntity : BaseEntity<Guid> // winch = guincho
     {
         protected WinchEntity(VehicleSizeEnum vehicleSize)
         {
